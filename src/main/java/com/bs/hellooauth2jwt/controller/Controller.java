@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 
     @GetMapping("/")
-    public String home(@AuthenticationPrincipal OAuth2User oAuth2User){
-        return oAuth2User.getName();
+    public String home(){
+        return "hello world";
     }
 
     @GetMapping("/api/v1/member")
