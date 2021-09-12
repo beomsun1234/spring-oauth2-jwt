@@ -5,11 +5,13 @@ import com.bs.hellooauth2jwt.domain.Member;
 import com.bs.hellooauth2jwt.domain.Role;
 import lombok.Builder;
 import lombok.Getter;
-import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
+import lombok.NoArgsConstructor;
+
 
 import java.util.Map;
 
 @Getter
+@NoArgsConstructor
 public class OAuth2Attributes {
     private Map<String, Object> attributes;
     private String nameAttributeKey;
